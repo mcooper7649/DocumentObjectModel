@@ -95,9 +95,33 @@ Helpful Notes
 4. Value are represented as strings. CSS vs DOM | visibility: hidden; translates to visibility = "hidden";  //making it a string value
 
 
-## Dom Challenge #3.
+## Dom Challenge #3
+---
 1. Using Javascript Dom Make the Button background "yellow"
 2. Use HTML tree Generator
 
 * See solution3.js for solution
 
+
+## Seperation of Concerns
+---
+1. HTML is for Structure.
+2. CSS is Style.
+3. JS is for Behavior.
+
+## classLists  - Adding, Removing and Toggling
+---
+
+1. document.querySelector("button").classList; //returns the list of classes
+2. Now we can use methods to add classes to our elements classlist | Add, Remove and Toggle
+    - document.querySelector("button").classList.add("invisible") // This would add a class named invisible
+    - document.querySelector("button").classList.remove("invisible") // This would remove a class named invisible
+    - document.querySelector("button").classList.toggle("invisible") // Toggles class opposite of what it currently is.
+
+## classLists Challenge
+---
+
+1. In Stylesheet create a class called "huge"
+2. Change font-size in "Huge" to 10 REM.
+3. In the JS, Apply Huge to the H1.
+    * classLists.js for solution

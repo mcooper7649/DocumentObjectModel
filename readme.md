@@ -82,3 +82,22 @@ Helpful Notes
 2. Use HTML tree generator for help
 
 * See solution2.js for solution
+
+
+## Using JavaScript to Manipulate the DOM
+---
+
+[W3 Styles](https://www.w3schools.com/jsref/dom_obj_style.asp)
+
+1. camelCasing is standard in JavaScript and DOM. 
+2. Due to camelCasing some styles may differ from css; For example font-size: 16px;    |  fontSize = "16px";
+3. NO Dashes
+4. Value are represented as strings. CSS vs DOM | visibility: hidden; translates to visibility = "hidden";  //making it a string value
+
+
+## Dom Challenge #3.
+1. Using Javascript Dom Make the Button background "yellow"
+2. Use HTML tree Generator
+
+* See solution3.js for solution
+

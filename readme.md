@@ -125,3 +125,11 @@ Helpful Notes
 2. Change font-size in "Huge" to 10 REM.
 3. In the JS, Apply Huge to the H1.
     * classLists.js for solution
+
+
+## Notable DOM Methods
+
+1. innerHtml // The text inside the html; can be additional html
+2. textContent // Similiar to innerHTML but specific to text
+    * Remember the differences as using a Setter you can be flexible.
+    * Example | document.querySelector("h1").innerHTML = "<em>Good Bye</em>"

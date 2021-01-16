@@ -168,10 +168,64 @@ Helpful Notes
 4. addEventListener to our target | Remember not to add () so it doesn't get called on load.
 ```document.querySelector("button").addEventListener("click", handleClick)```
 ```target.addEventListener(type, listener [, options]);```  //Example Structure
-5. 
+5. Now Add an EventListener to ALL the buttons so it says "I got clicked" if you click any button.
 
 
 [Drum Kit Files](https://drive.google.com/uc?export=download&id=15mCNTdl76jPIG-T239u1XBEY81wrYy7Y)
 
 [MDN School | addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
  
+
+ ##EventListener Noteables 
+ ---
+
+ 1. You can use Anonymous or Named Functions when using addEventListener.
+ 
+ Anonymous function using addEventListener
+ 
+```
+ document.querySelectorAll(".drum")[i].addEventListener("click", function(){
+        alert("i got clicked");
+    });
+```
+
+ Named function using addEventListener
+
+ ```
+ document.querySelectorAll(".drum")[i].addEventListener("click", respondToClick)
+ 
+ 
+ function respondToClick(){
+        alert("i got clicked");
+    }
+```
+
+
+### Higher Order Function
+---
+
+1. This allows you to pass functions into functions.
+```
+function add(num1, num2){
+    return num1 + num2;
+}
+
+function multiply(num1, num2){
+    return num1 * num2
+}
+
+function divide (num1, num2){
+    return num1 / num2
+}
+
+function subtract (num1, num2){
+    return num1 - num2
+}
+
+
+
+
+function calculate(num1, num1, operator){
+    return operator (num1, num2)  // This HOF uses operator to pass our number and operator across.
+}
+```

@@ -2,6 +2,9 @@
  --
 
  # Introductions to the Document Object Model
+ ---
+ 1. JavaScript lets DOM interact with the HTML and CSS.
+ 2. This adds behavior to your site.
  
  
  ### Adding JavaScript to Websites
@@ -109,7 +112,7 @@ Helpful Notes
 2. CSS is Style.
 3. JS is for Behavior.
 
-## classLists  - Adding, Removing and Toggling
+## Manipulating Styles with classLists  - Adding, Removing and Toggling
 ---
 
 1. document.querySelector("button").classList; //returns the list of classes
@@ -127,9 +130,48 @@ Helpful Notes
     * classLists.js for solution
 
 
-## Notable DOM Methods
+## Manipulating Text with innerHTML and textContent
+---
 
 1. innerHtml // The text inside the html; can be additional html
 2. textContent // Similiar to innerHTML but specific to text
     * Remember the differences as using a Setter you can be flexible.
     * Example | document.querySelector("h1").innerHTML = "<em>Good Bye</em>"
+
+
+
+## Attributes
+---
+
+1. Attributes examples include | href, type, class, src,  | ``<a href="www.google.com">Google </a>`` // href="www.google.com" is our attribute
+2. Want to get our attributes associated with a tag? | ``document.querySelector("a").attributes;`` // retreives an array of our attributes
+3. Want to get a specific attribute? | ``document.querySelector("a").getAtribute("href");` // retreives an "https://www.google.com"
+4. Want to set a specific attribute? | ``document.querySelector("a").setAtribute("href", "https://www.bing.com");` // sets our attribute to bing
+
+
+### DOM Challenge | Dice Game
+---
+
+[Challenge-Files](https://drive.google.com/uc?export=download&id=1jVeyfctlACds5zBKiSquVBrCxfg4y68v)
+
+1. Two Dice on Screen with Randomly Display a number (1 - 6 )
+2. One Dice will be Assigned to Each Player; 2 Players Total
+3. On Page Refresh it will roll the dice and whoever has a higher number  it will announce "Player x Wins!"
+
+
+### Dom Challenge | Drum Kit
+---
+
+1. Link index.js to index.html then test using an alert
+2. Lets create a function that does something when the button is click
+3. Use Dom to Select what buton our handleClick will use.
+4. addEventListener to our target | Remember not to add () so it doesn't get called on load.
+```document.querySelector("button").addEventListener("click", handleClick)```
+```target.addEventListener(type, listener [, options]);```  //Example Structure
+5. 
+
+
+[Drum Kit Files](https://drive.google.com/uc?export=download&id=15mCNTdl76jPIG-T239u1XBEY81wrYy7Y)
+
+[MDN School | addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+ 

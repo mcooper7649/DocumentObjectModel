@@ -159,7 +159,7 @@ Helpful Notes
 3. On Page Refresh it will roll the dice and whoever has a higher number  it will announce "Player x Wins!"
 
 
-### Dom Challenge | Drum Kit
+### Dom Challenge | Drum Kit 1
 ---
 
 1. Link index.js to index.html then test using an alert
@@ -229,3 +229,24 @@ function calculate(num1, num1, operator){
     return operator (num1, num2)  // This HOF uses operator to pass our number and operator across.
 }
 ```
+
+
+### Dom Challenge | Drum Kit 2
+---
+
+* Play Audio Using JS Example 
+``var audio = new Audio ('audio_file.mp3');
+audio.play();``
+
+1. Inside the sounds folder play tom-1 drum audio file when all the drums are clicked. Replace the Alert. 
+
+## this
+---
+
+for (var i = 0; i < numOfDrumButtons; i++){
+    
+    document.querySelectorAll(".drum")[i].addEventListener("click", function(){
+        console.log("this")
+    });
+
+}

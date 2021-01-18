@@ -8,7 +8,7 @@ var numOfDrumButtons = document.querySelectorAll(".drum").length
 
 for (var i = 0; i < numOfDrumButtons; i++){
     
-    document.querySelectorAll(".drum")[i].addEventListener("click", function(){
+    document.querySelectorAll(".drum")[i].addEventListener("mouseover", function(){
         if (this.innerHTML == "w"){
             var audio = new Audio ('/Drum Kit Starting Files/sounds/tom-1.mp3');
             audio.play();
@@ -31,6 +31,10 @@ for (var i = 0; i < numOfDrumButtons; i++){
             this.style.color = "white";
         } else if (this.innerHTML == "l"){
             var audio = new Audio ('/Drum Kit Starting Files/sounds/kick-bass.mp3');
+            audio.play();
+            this.style.color = "white";
+        } else if (this.innerHTML == "d"){
+            var audio = new Audio ('/Drum Kit Starting Files/sounds/tom-4.mp3');
             audio.play();
             this.style.color = "white";
         }

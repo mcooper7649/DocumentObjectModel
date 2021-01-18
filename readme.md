@@ -250,3 +250,89 @@ for (var i = 0; i < numOfDrumButtons; i++){
     });
 
 }
+
+
+### Deeper Understanding of JavaScript Objects
+--- 
+
+1. Instead of creating a ton of variables, for each object needed, ie bellboy1; bellboy2, Objects let you create properties and adds more defined structure.
+
+```
+// Example Object
+
+var bellboy1 = {
+    name: "Timmy",
+    age: 19,
+    hasWorkPermit: True,
+    languages: ["French", "English"]
+}
+
+
+alert("Hello, My name is " + bellBoy1.name )   //Returns Timmy
+
+```
+
+2. Different Objects have different properties, whatever is relevant to that object.
+
+```
+
+var houseKeeper1 = {
+    name: "Sophia",
+    age: "19",
+    primaryLanguage: "Spanish",
+    workSkills: ["Laundry", "Kitchen-Work", "BabySitting"]
+}
+
+```
+
+3. Use dot notation to access information from the properties. houseKeeper1.name // Returns "Sophia".
+
+
+##  Constructor Functions 
+---
+
+1. Great for mass producing our objects
+2. The first letter of the functions name is Capitalized, expressing its a constructor. 
+3. We pass in properties needed to construct, we use THIS (lowercase) to set the properties passsed. 
+
+
+```
+
+// Create our Constructor
+
+function BellBoy (name, age, hasWorkPermit, languages){
+    this.name = name;
+    this.age = age;
+    this.hasWorkPermit = hasWorkPermit;
+    this.languages = languages;
+}
+
+// Initialize Object
+
+var bellBoy1 = new BellBoy("Timmy, 19, true, ["Frech", "English"]),
+
+
+```
+
+## Constructor Challenge
+---
+
+1. Create a new constructor function for housekeeper.
+2. Create a new housekeeper
+
+```
+
+//Constructor Function
+
+function HouseKeeper ( name, age, primaryLanguage, workSkills) {
+    this.name = name;
+    this.age = age;
+    this.primaryLanguage = primaryLanguage;
+    this.workSkills = workSkills;
+}
+
+// Call New Housekeeper Object
+
+var housekeeper1 = new HouseKeeper ( "Sophia", "19", "Spanish", ["Laundry", "Kitchen-Work", "BabySitting"]);
+
+```

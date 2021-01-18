@@ -336,3 +336,91 @@ function HouseKeeper ( name, age, primaryLanguage, workSkills) {
 var housekeeper1 = new HouseKeeper ( "Sophia", "19", "Spanish", ["Laundry", "Kitchen-Work", "BabySitting"]);
 
 ```
+
+
+## Switch Statements
+---
+
+1. Switch lets you switch between different events. In our examples we are using when a keys are pressed.
+
+2. A Switch behaves likes a function 
+
+```
+
+var buttonInnerHTML = this.innerHTML;  //Sets our variable to the event
+
+switch(buttonInnerHTML ){      // expression will be the variable
+    case "w": // if "w" key is the innerHTML execute code after:
+        console.log("w pressed")/
+    break; // Ends the  switch
+    default:   // Like an Else after an if statemnet; It covers all the other possible scenarios.
+}
+
+```
+
+## Object Methods
+---
+
+1. A method is a function that associated with an object.
+
+
+
+```
+// Example Object Function with Method moveSuitcase added.
+
+var bellboy1 = {
+    name: "Timmy",
+    age: 19,
+    hasWorkPermit: True,
+    languages: ["French", "English"],
+    moveSuitcase: function () {
+        alert ("May I take your suitcase?");
+        pickUpSuitcase();
+        move();
+    }
+}
+
+
+bellBoy1.moveSuitcase(); // How to call the method;
+
+
+//Constructor Function with Method moveSuitcase added. 
+
+function BellBoy (name, age, hasWorkPermit, languages){
+    this.name = name;
+    this.age = age;
+    this.hasWorkPermit = hasWorkPermit;
+    this.languages = languages;
+    this.moveSuitcase: function () {     // Methods are added the same was as properties
+        alert ("May I take your suitcase?"); 
+        pickUpSuitcase();
+        move();
+    }    
+}
+// All new objects created will have these methods.
+
+```
+
+
+## HouseKeeper Constructor Method Challenge
+---
+
+. Add Clean method to housekeeper constructor, that alerts "Cleaning in Progress"
+
+
+
+```
+
+function HouseKeeper ( name, age, primaryLanguage, workSkills) {
+    this.name = name;
+    this.age = age;
+    this.primaryLanguage = primaryLanguage;
+    this.workSkills = workSkills;
+    this.clean: function(){
+        alert("Cleaning in Progress...")
+    }
+}
+
+var housekeeper1 = new HouseKeeper ( "Sophia", "19", "Spanish", ["Laundry", "Kitchen-Work", "BabySitting"]);
+
+houseKeeper1.clean();  // Should return "Cleaning in progress..."

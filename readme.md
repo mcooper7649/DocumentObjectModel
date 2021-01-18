@@ -424,3 +424,12 @@ function HouseKeeper ( name, age, primaryLanguage, workSkills) {
 var housekeeper1 = new HouseKeeper ( "Sophia", "19", "Spanish", ["Laundry", "Kitchen-Work", "BabySitting"]);
 
 houseKeeper1.clean();  // Should return "Cleaning in progress..."
+
+```
+
+
+
+### Drum Challenge #3 | Add another event listener for keypresses
+---
+
+1. You can add event listeners to ENTIRE document, so it's listening for all keystrokes.

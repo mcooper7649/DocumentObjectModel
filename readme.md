@@ -429,7 +429,78 @@ houseKeeper1.clean();  // Should return "Cleaning in progress..."
 
 
 
-### Drum Challenge #3 | Add another event listener for keypresses
+### Event Information
 ---
 
 1. You can add event listeners to ENTIRE document, so it's listening for all keystrokes.
+2. This brings back event data, including the key pressed.ioouioyu
+
+
+## Drum Kit Challenge 3
+---
+
+1. Create a function that takes a character and checks it against a switch statement in order to play the correct sound.
+2. Then call it inside the event listener for our keypress or drum buttons.
+
+
+
+## Callback Functions
+
+* What is a CallBack Function?
+    - Higher Order Function - A function that takes functions as inputs.
+    - Callback Function is a function thats waiting for something to happen.
+
+```
+// Example Callback Function
+document.addEventListener("keydown", respondToKey(event){
+    function respondToKey(event){   
+        console.log("hey pressed.") 
+    }
+})
+
+```
+
+* In our example, we can see the function respondToKey, is our callback function, as its awaiting the event listener to trigger the callback function.
+
+
+* Event, Evt, or E are common representations of event you will see.
+
+``$0.addEventListener("click", function(event){
+    console.log(event)
+})``
+
+* In our example above, we are using an anonymous callback to log the event information.  
+
+
+* In our example below we have a
+1.  Higher Order Function "anotherAddEventListener"
+2.  a variable  "eventThatHappened" that will be our trigger information in the event.
+3.  if statement | if (object.property === typeOfEvent){
+    console.log(eventThatHappened);
+}
+4. Add anotherAddEventlistener as an event listener
+
+
+```
+function anotherAddEventListener(typeOfEvent, callback){
+
+// Create an object that stores the event information
+    var eventThatHappened = {   
+        eventType: "keypress",
+        key: "p",
+        durationOfKeypress: 2,
+    }
+// If eventinformation eventType matches typeOfEvent we trigger our console.log(EventThatHappened)
+    if (eventThatHappened.eventType === typeOfEvent){
+        console.log(eventThatHappened);
+    }
+
+}
+
+// when anotherAddEventLister is called with a keypress, that event matches our higher order function and console logs the event information
+
+document.anotherAddEventListener("keypress", function (event){
+    console.log(event)
+)};
+
+```

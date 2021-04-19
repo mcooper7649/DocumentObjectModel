@@ -429,11 +429,19 @@ houseKeeper1.clean();  // Should return "Cleaning in progress..."
 
 
 
-### Event Information
+### Event Listeners Information
 ---
 
 1. You can add event listeners to ENTIRE document, so it's listening for all keystrokes.
-2. This brings back event data, including the key pressed.ioouioyu
+2. This brings back event data, including the key pressed.
+
+Example
+```
+document.addEventListener("keydown", function(event){
+    makeSound(event.key)
+})
+```
+
 
 
 ## Drum Kit Challenge 3
@@ -465,9 +473,12 @@ document.addEventListener("keydown", respondToKey(event){
 
 * Event, Evt, or E are common representations of event you will see.
 
-``$0.addEventListener("click", function(event){
+
+$0.addEventListener("click", function(event){
     console.log(event)
-})``
+})
+
+
 
 * In our example above, we are using an anonymous callback to log the event information.  
 
@@ -504,3 +515,11 @@ document.anotherAddEventListener("keypress", function (event){
 )};
 
 ```
+
+## Drumkit Challenge #4 | Adding Animation Challenge
+---
+
+1. Add animation to both when the but is clicked or key is pressed.
+    - Want to create a function
+
+2. Add pressed class which has different box-shadow and opacity already configured.
